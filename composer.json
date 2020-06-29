@@ -1,0 +1,31 @@
+{
+  "name": "sumantablog/superadmin-config",
+  "description": "Configuration extension for laravel-superadmin",
+  "type": "library",
+  "keywords": ["laravel-admin", "setting"],
+  "homepage": "https://github.com/sumantablog/superadmin-config",
+  "license": "MIT",
+  "authors": [{
+    "name": "Sumanta Kabiraj",
+    "email": "sumantablog@gmail.com"
+  }],
+  "require": {
+    "php": ">=7.0.0",
+    "sumantablog/laravel-superadmin": "^1.0"
+  },
+  "require-dev": {
+    "phpunit/phpunit": "~6.0"
+  },
+  "autoload": {
+    "psr-4": {
+      "Sumantablog\\Admin\\Config\\": "src/"
+    }
+  },
+  "extra": {
+    "laravel": {
+      "providers": [
+        "Sumantablog\\Admin\\Config\\ConfigServiceProvider"
+      ]
+    }
+  }
+}
